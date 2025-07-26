@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOC Trainee Exam 2025 - Model Papers</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 1rem; /* More rounded corners */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Softer shadow */
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .download-button {
+            background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%); /* Gradient background */
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .download-button:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+        .download-button:disabled {
+            background-image: none;
+            background-color: #cbd5e0; /* Gray for disabled */
+            cursor: not-allowed;
+        }
+        .progress-bar-container {
+            height: 8px;
+            background-color: #e2e8f0;
+            border-radius: 9999px;
+            overflow: hidden;
+        }
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background-color: #38b2ac; /* Teal color for progress */
+            border-radius: 9999px;
+            transition: width 0.1s linear;
+        }
+    </style>
+
+<script type='text/javascript' src='//pl27267300.profitableratecpm.com/4b/26/a4/4b26a434e70de13a24babb9778f30eba.js'></script>
+
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-purple-600 to-blue-500 text-white py-6 shadow-lg">
+        <div class="container text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-2">BOC Trainee Exam 2025</h1>
+            <p class="text-xl md:text-2xl font-light">Model Papers for Your Success</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow py-8">
+        <div class="container">
+            <section class="mb-10">
+                <h2 class="text-3xl font-bold text-center mb-6 text-gray-800">Available Model Papers</h2>
+                <p class="text-center text-lg text-gray-600 mb-8">Click on any paper to start the download countdown. Please wait for the timer to complete!</p>
+
+                <div id="pdf-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- PDF cards will be injected here by JavaScript -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container text-center">
+            <p>&copy; 2025 BOC Trainee Exam Prep. All rights reserved.</p>
+            <p class="text-sm mt-2">Designed with <span class="text-red-500">&hearts;</span> for aspiring trainees.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Array of PDF files with their details
+        const pdfFiles = [
+            { id: 'pdf1', name: "BOC Trainee Exam 2025 - Model Paper 1", url: "https://www.africau.edu/images/default/sample.pdf", description: "Comprehensive practice paper for the upcoming exam." },
+            { id: 'pdf2', name: "BOC Trainee Exam 2025 - Model Paper 2", url: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf", description: "Second set of questions to test your knowledge." },
+            { id: 'pdf3', name: "BOC Trainee Exam 2025 - Model Paper 3", url: "https://www.orimi.com/pdf-test.pdf", description: "Third paper focusing on key subject areas." },
+            { id: 'pdf4', name: "BOC Trainee Exam 2025 - Model Paper 4", url: "https://pdfobject.com/pdf/sample.pdf", description: "Practice paper covering advanced topics." },
+            { id: 'pdf5', name: "BOC Trainee Exam 2025 - Model Paper 5", url: "https://www.africau.edu/images/default/sample.pdf", description: "Fifth paper with a mix of easy and difficult questions." },
+            { id: 'pdf6', name: "BOC Trainee Exam 2025 - Model Paper 6", url: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf", description: "Sixth paper for comprehensive revision." },
+            { id: 'pdf7', name: "BOC Trainee Exam 2025 - Model Paper 7", url: "https://www.orimi.com/pdf-test.pdf", description: "Seventh paper to sharpen your problem-solving skills." },
+            { id: 'pdf8', name: "BOC Trainee Exam 2025 - Model Paper 8", url: "https://pdfobject.com/pdf/sample.pdf", description: "Eighth paper with detailed explanations for answers." },
+            { id: 'pdf9', name: "BOC Trainee Exam 2025 - Model Paper 9", url: "https://www.africau.edu/images/default/sample.pdf", description: "Ninth paper focusing on time management." },
+            { id: 'pdf10', name: "BOC Trainee Exam 2025 - Model Paper 10", url: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf", description: "Tenth paper to challenge your understanding." },
+            { id: 'pdf11', name: "BOC Trainee Exam 2025 - Model Paper 11", url: "https://www.orimi.com/pdf-test.pdf", description: "Eleventh paper with new question patterns." },
+            { id: 'pdf12', name: "BOC Trainee Exam 2025 - Model Paper 12", url: "https://pdfobject.com/pdf/sample.pdf", description: "Twelfth paper for final preparation." },
+            { id: 'pdf13', name: "BOC Trainee Exam 2025 - Model Paper 13", url: "https://www.africau.edu/images/default/sample.pdf", description: "Thirteenth paper with a focus on critical thinking." },
+            { id: 'pdf14', name: "BOC Trainee Exam 2025 - Model Paper 14", url: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf", description: "Fourteenth paper to reinforce learned concepts." },
+            { id: 'pdf15', name: "BOC Trainee Exam 2025 - Model Paper 15", url: "https://www.orimi.com/pdf-test.pdf", description: "Final model paper for last-minute revision." }
+        ];
+
+        // Default waiting time in seconds
+        const DOWNLOAD_WAIT_TIME = 5; // 5 seconds
+
+        // State to track active downloads
+        const activeDownloads = {};
+
+        /**
+         * Creates an HTML card element for a given PDF file.
+         * @param {object} pdf - The PDF file object.
+         * @returns {string} The HTML string for the PDF card.
+         */
+        function createPdfCard(pdf) {
+            return `
+                <div id="card-${pdf.id}" class="card p-6 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-900">${pdf.name}</h3>
+                        <p class="text-gray-600 text-sm mb-4">${pdf.description}</p>
+                    </div>
+                    <div>
+                        <div class="progress-bar-container mb-3 hidden" id="progress-container-${pdf.id}">
+                            <div class="progress-bar" id="progress-bar-${pdf.id}"></div>
+                        </div>
+                        <button id="download-btn-${pdf.id}"
+                                class="download-button w-full text-white font-bold py-3 px-4 rounded-lg focus:outline-none focus:shadow-outline text-lg"
+                                onclick="handleDownload('${pdf.id}', '${pdf.url}', '${pdf.name}')">
+                            Download Now
+                        </button>
+                        <p id="countdown-text-${pdf.id}" class="text-center text-sm text-gray-500 mt-2 hidden"></p>
+                    </div>
+                </div>
+            `;
+        }
+
+        /**
+         * Handles the download process for a PDF file.
+         * @param {string} id - The unique ID of the PDF file.
+         * @param {string} url - The URL of the PDF file.
+         * @param {string} fileName - The name of the PDF file for download.
+         */
+        function handleDownload(id, url, fileName) {
+            const downloadButton = document.getElementById(`download-btn-${id}`);
+            const countdownText = document.getElementById(`countdown-text-${id}`);
+            const progressBarContainer = document.getElementById(`progress-container-${id}`);
+            const progressBar = document.getElementById(`progress-bar-${id}`);
+
+            // If a download is already active for this ID, do nothing
+            if (activeDownloads[id]) {
+                return;
+            }
+
+            // Disable the button and show waiting state
+            downloadButton.disabled = true;
+            downloadButton.textContent = `Please Wait...`;
+            countdownText.classList.remove('hidden');
+            progressBarContainer.classList.remove('hidden');
+
+            activeDownloads[id] = true; // Mark as active
+
+            let timeLeft = DOWNLOAD_WAIT_TIME;
+            let progress = 0;
+
+            // Update countdown and progress bar every 100ms
+            const interval = setInterval(() => {
+                timeLeft -= 0.1; // Decrement by a smaller step for smoother progress
+                progress = ((DOWNLOAD_WAIT_TIME - timeLeft) / DOWNLOAD_WAIT_TIME) * 100;
+
+                if (timeLeft <= 0) {
+                    clearInterval(interval);
+                    countdownText.classList.add('hidden');
+                    progressBarContainer.classList.add('hidden');
+                    progressBar.style.width = '0%'; // Reset progress bar
+
+                    // Initiate download
+                    const link = document.createElement('a');
+                    link.href = url;
+                    link.download = fileName.replace(/ /g, '_') + '.pdf'; // Sanitize filename for download
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+
+                    // Reset button state after download attempt
+                    downloadButton.textContent = 'Download Complete!';
+                    downloadButton.classList.remove('download-button'); // Remove gradient
+                    downloadButton.classList.add('bg-green-500', 'hover:bg-green-600'); // Green for success
+                    setTimeout(() => {
+                        downloadButton.disabled = false;
+                        downloadButton.textContent = 'Download Now';
+                        downloadButton.classList.add('download-button'); // Restore gradient
+                        downloadButton.classList.remove('bg-green-500', 'hover:bg-green-600');
+                        delete activeDownloads[id]; // Allow re-download
+                    }, 3000); // Button stays "Download Complete" for 3 seconds
+                } else {
+                    countdownText.textContent = `Downloading in ${Math.ceil(timeLeft)} seconds...`;
+                    progressBar.style.width = `${progress}%`;
+                }
+            }, 100); // Update every 100 milliseconds for smoother animation
+        }
+
+        // Populate the PDF list when the DOM is fully loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            const pdfListContainer = document.getElementById('pdf-list');
+            pdfFiles.forEach(pdf => {
+                pdfListContainer.innerHTML += createPdfCard(pdf);
+            });
+        });
+    </script>
+</body>
+</html>
